@@ -5,6 +5,7 @@ const multer = require('multer');
 const path = require('path');
 const bodyParser = require('body-parser');
 
+/*
 // Create MySQL connection
 const connection = mysql.createConnection ({
     host: 'localhost',
@@ -12,6 +13,16 @@ const connection = mysql.createConnection ({
     password: '',
     database: 'webapplication_database'
 });
+
+*/
+
+const connection = mysql.createConnection ({
+    host:'db4free.net',
+    user:'muddproject',
+    password:'9#m9BvLkH_e2#-N',
+    database:'databaseproject'
+});
+
 connection.connect((err) => {
     if (err) {
         console.error('Error connecting to MySQL:', err);
